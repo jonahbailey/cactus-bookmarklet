@@ -1,0 +1,34 @@
+// Imports -------------------------------------------------------------------
+
+@import "compass/reset";
+@import "base";
+@import "_mixins.scss";
+@import "_variables.scss";
+
+
+/* Layout ------------------------------------------------------------------*/
+
+#main {
+  @include container;
+  @include susy-grid-background;
+  font-family: "Courier New";
+}
+
+.message {
+	@include columns(12,12);
+	text-align: center;
+	margin-left: 1.695%;
+	padding: .5em 0;
+	color: white;
+	font-weight: 700;
+}
+
+.pass {
+	border: 1px solid $green;
+	background: lighten($green, 25%);
+}
+
+.fail {
+	border: 1px solid $red;
+	background: lighten($red, 25%);
+}
